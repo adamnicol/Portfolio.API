@@ -1,0 +1,23 @@
+GET {{HostAddress}}/users/
+Accept: application/json
+
+###
+
+POST {{HostAddress}}/users/
+Content-Type: application/json
+
+{
+    "UserName": "User",
+    "Email": "user@domain.com",
+    "Password": "password"
+}
+
+###
+
+PUT {{HostAddress}}/users/0
+Content-Type: application/json
+
+{
+    "UserName": "User",
+    "Email": "user@domain.com",
+}
